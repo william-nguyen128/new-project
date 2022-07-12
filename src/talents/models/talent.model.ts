@@ -1,4 +1,4 @@
-import { buildSchema, getModelForClass, prop } from '@typegoose/typegoose';
+import { buildSchema, prop } from '@typegoose/typegoose';
 
 class FieldValidation {
   static email = (email) => {
@@ -298,5 +298,4 @@ export class Talent {
   projects: Project[];
 }
 
-export const TalentModel = getModelForClass(Talent);
 export const TalentSchema = buildSchema(Talent);
